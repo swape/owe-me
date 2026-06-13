@@ -1,3 +1,9 @@
+---
+import { Font } from 'astro:assets'
+import '../styles/vars.css'
+import '../styles/layout.css'
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,8 +11,9 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<link rel="stylesheet" href="../styles/layout.css" />
-		<meta name="generator" content={Astro.generator} />
+
+		<Font cssVariable="--font-material-symbols" />
+		
 		<title>Owe me</title>
 	</head>
 	<body>

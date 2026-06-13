@@ -1,4 +1,20 @@
 {
 	"extends": "astro/tsconfigs/strict",
-	"include": [".astro/types.d.ts", "src/**/*"]
+	"include": [".astro/types.d.ts", "src/**/*"],
+		"compilerOptions": {
+		"target": "esnext",
+		"module": "NodeNext",
+		"moduleResolution": "nodenext",
+		"jsx": "preserve",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
+		"checkJs": false,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"types": ["astro/client", "node"],
+		"allowJs": true
+	},
 }
