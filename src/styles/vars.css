@@ -3,4 +3,9 @@
 	--color-secondary: #9333ea;
 	--color-background: black;
 	--color-text: #ffffff;
+
+	--size-font-small: 0.875rem;
+	--size-font-medium: 1rem;
+	--size-font-large: 1.5rem;
+	--size-font-extra-large: 2rem;
 }
