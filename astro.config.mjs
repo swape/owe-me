@@ -12,5 +12,10 @@ export default defineConfig({
       name: 'Material Symbols Outlined',
       cssVariable: '--font-material-symbols',
     },
+    {
+      provider: fontProviders.googleicons(),
+      name: 'Inter',
+      cssVariable: '--font-inter',
+    }
   ],
 })

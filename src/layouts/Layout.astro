@@ -2,6 +2,8 @@
 import { Font } from 'astro:assets'
 import '../styles/vars.css'
 import '../styles/layout.css'
+import { ClientRouter } from 'astro:transitions'
+import Menu from '../components/menu/index.astro'
 ---
 
 <!doctype html>
@@ -11,12 +13,16 @@ import '../styles/layout.css'
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-
+		<ClientRouter />
 		<Font cssVariable="--font-material-symbols" />
+		<Font cssVariable="--font-inter" />
 		
 		<title>Owe me</title>
 	</head>
 	<body>
-		<slot />
+		<Menu />
+		<main class="main">
+			<slot/>
+		</main>
 	</body>
 </html>
