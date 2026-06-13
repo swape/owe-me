@@ -17,6 +17,7 @@
 		"@astrojs/ts-plugin": "^1.10.9",
 		"astro": "^6.4.6",
 		"@biomejs/biome": "2.5.0",
-		"typescript": "^6.0.3"
+		"typescript": "^6.0.3",
+    "@types/node": "^25.9.3"
 	}
 }
